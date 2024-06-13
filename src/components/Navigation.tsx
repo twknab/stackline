@@ -1,9 +1,7 @@
-import stacklineLogo from "./../assets/stackline-logo.svg";
-
 function Navigation() {
   return (
-    <div className="navbar">
-      <img src={stacklineLogo} className="logo" alt="Stackline logo" />
+    <div className="bg-[#052849] w-screen h-[86px]">
+      <div className="logo-background" />
     </div>
   );
 }

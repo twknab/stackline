@@ -556,12 +556,25 @@ video {
   --tw-contain-style:  ;
 }
 
+.h-\[86px\]{
+  height: 86px;
+}
+
 .h-screen{
   height: 100vh;
 }
 
+.w-screen{
+  width: 100vw;
+}
+
 .border{
   border-width: 1px;
+}
+
+.bg-\[\#052849\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 40 73 / var(--tw-bg-opacity));
 }
 
 * {
@@ -569,6 +582,16 @@ video {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.logo-background {
+  width: 20px;
+  height: 67px;
+  background-image: url('./assets/stackline-logo.svg');
+  background-size: 165px 162px;
+  background-position: 0px -39px;
+  margin-left: 27px;
+  border-bottom: 5px solid white;
 }
 
 :root {
