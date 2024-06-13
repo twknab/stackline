@@ -8,14 +8,14 @@ import SalesTable from "./components/SalesTable";
 import productData from "./assets/data/data-2021.json";
 
 function App() {
-  const productsData = useSelector((state: RootState) => state.products.products);
+  const products = useSelector((state: RootState) => state.products.products);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(setProducts(productData));
   }, [dispatch]);
 
-  const product = productsData[0];
+  const product = products[0];
   const sales = product?.sales;
 
   return (
