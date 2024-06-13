@@ -18,7 +18,7 @@ function ProductSidebar({product}: ProductSidebarProps) {
         alt="Shark Ninja"
         className="mx-auto"
       />
-      <h1 className="text-[1.39rem] text-center font-normal mt-3">
+      <h1 className="text-[1.39rem] text-center font-medium mt-3">
         {product.title}
       </h1>
       <p className="text-md text-center mt-1 mb-5 text-[#A7B7C9] pl-14 pr-14">
