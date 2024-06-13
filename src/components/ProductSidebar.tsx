@@ -9,7 +9,6 @@ function ProductSidebar({product}: ProductSidebarProps) {
     return <div>No product available.</div>
   }
 
-  console.log(product)
   return (
     <div className="bg-white w-full sm:w-[522px] pt-6 shadow-lg">
       <img
@@ -27,7 +26,7 @@ function ProductSidebar({product}: ProductSidebarProps) {
       </p>
       <div className="border-t border-b mb-6 pt-4 pb-4 pl-5 pr-5">
         {product.tags.map((tag) => (
-          <div className="px-6 py-0.5 border rounded-md inline-block mx-1 my-2 text-gray-600 border-gray-200">
+          <div className="px-6 py-0.5 border rounded-md inline-block mx-1 my-2 text-gray-600 border-gray-200" key={tag}>
             {tag}
           </div>
         ))}
