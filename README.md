@@ -20,6 +20,10 @@ I chose to implement the data table as this seemed most straight forward. Howeve
 - `npm run dev`
 - Copy and paste the URL from the output into your browser
 
+## Visual
+
+![Screenshot of the completed project](./doc/completed-project-screenshot.png)
+
 ## Personal Note
 
 Thank you for allowing me the opportunity to complete this assessment and showcase my skills for you! 🙏 I hope you enjoy the code and output, and thank you again!
