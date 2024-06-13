@@ -1,5 +1,4 @@
 // import { useState } from 'react'
-import "./App.css";
 import Navigation from "./components/Navigation";
 import ProductSidebar from "./components/ProductSidebar";
 import SalesGraph from "./components/SalesGraph";
@@ -7,7 +6,7 @@ import SalesTable from "./components/SalesTable";
 
 function App() {
   return (
-    <div>
+    <div className="h-screen">
       <Navigation />
       <div className="main">
         <ProductSidebar /> 
