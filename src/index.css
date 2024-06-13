@@ -3,20 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+body {
+  @apply font-sans text-base font-light;
   font-family: 'Outfit', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .logo-background {
-  width: 20px;
-  height: 67px;
+  @apply w-5 h-16 ml-7 border-b-4 border-white;
   background-image: url('./assets/stackline-logo.svg');
   background-size: 165px 162px;
-  background-position: 0px -39px;
-  margin-left: 27px;
-  border-bottom: 5px solid white;
+  background-position: 0px -40px;
 }
 
+.chip {
+  @apply px-6 py-0.5 border rounded-md inline-block mx-1 my-2 text-gray-600 border-gray-200;
+}
