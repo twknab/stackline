@@ -1,5 +1,8 @@
 # Stackline
 
+Live Deployment 🌐
+👉 [https://stackline-eight.vercel.app](https://stackline-eight.vercel.app)
+
 This project takes the image spec and turns it into a fully functional website using [Vite](https://vitejs.dev/) and [React](https://reactjs.org/). I utilized [Redux](https://redux.js.org/) to load data from the provided JSON file, and pass into the components. I used [tailwind](https://tailwindcss.com/) for the CSS styling, and [Vercel](https://vercel.com/) for the hosting.
 
 I chose to implement the data table as this seemed most straight forward. However, would likely utilize a library like [D3.js](https://d3js.org/) to create the dynamic graph.
