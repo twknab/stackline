@@ -54,31 +54,31 @@ function SalesTable({ sales }: SalesTableProps) {
         <thead className="text-gray-600">
           <tr>
             <th
-              className="px-8 py-8 border-b cursor-pointer font-normal text-left"
+              className="product-table-header px-8 py-8 text-left"
               onClick={() => requestSort("weekEnding")}
             >
               WEEK ENDING {getSortIndicator("weekEnding")}
             </th>
             <th
-              className="py-8 pr-6 border-b cursor-pointer font-normal text-center"
+              className="product-table-header py-8 text-center"
               onClick={() => requestSort("retailSales")}
             >
               RETAIL SALES {getSortIndicator("retailSales")}
             </th>
             <th
-              className="py-8 border-b cursor-pointer font-normal text-center"
+              className="product-table-header py-8 text-center"
               onClick={() => requestSort("wholesaleSales")}
             >
               WHOLESALE SALES {getSortIndicator("wholesaleSales")}
             </th>
             <th
-              className="py-8 pr-8 border-b cursor-pointer font-normal text-right"
+              className="product-table-header py-8 pr-8 text-right"
               onClick={() => requestSort("unitsSold")}
             >
               UNITS SOLD {getSortIndicator("unitsSold")}
             </th>
             <th
-              className="py-8 pr-8 border-b cursor-pointer font-normal text-right"
+              className="product-table-header py-8 pr-8 text-right"
               onClick={() => requestSort("retailerMargin")}
             >
               RETAILER MARGIN {getSortIndicator("retailerMargin")}
@@ -88,19 +88,19 @@ function SalesTable({ sales }: SalesTableProps) {
         <tbody>
           {sortedSales.map((sale, index) => (
             <tr className="text-[#A7B7C9]" key={index}>
-              <td className="py-6 px-8 border-b">
+              <td className="product-table-row px-8">
                 {format(new Date(sale.weekEnding), "MM-dd-yyyy")}
               </td>
-              <td className="py-6 pr-28 border-b text-right">
+              <td className="product-table-row pr-28 text-right">
                 ${sale.retailSales.toLocaleString()}
               </td>
-              <td className="py-6 pr-14 border-b text-right">
+              <td className="product-table-row pr-14 text-right">
                 ${sale.wholesaleSales.toLocaleString()}
               </td>
-              <td className="py-6 px-8 border-b text-right">
+              <td className="product-table-row px-8 text-right">
                 {sale.unitsSold}
               </td>
-              <td className="py-6 px-8 border-b text-right">
+              <td className="product-table-row px-8 text-right">
                 ${sale.retailerMargin.toLocaleString()}
               </td>
             </tr>

@@ -24,9 +24,12 @@ function ProductSidebar({product}: ProductSidebarProps) {
       <p className="text-md text-center mt-1 mb-5 text-[#A7B7C9] pl-14 pr-14">
         {product.subtitle}
       </p>
-      <div className="border-t border-b mb-6 pt-4 pb-4 pl-5 pr-5">
+      <div className="border-t border-b border-[#F5F7F9] mb-6 pt-4 pb-4 pl-5 pr-5">
         {product.tags.map((tag) => (
-          <div className="px-6 py-0.5 border rounded-md inline-block mx-1 my-2 text-gray-600 border-gray-200" key={tag}>
+          <div
+            className="px-6 py-0.5 border rounded-md inline-block mx-1 my-2 text-gray-600 border-[#E5E7EB]"
+            key={tag}
+          >
             {tag}
           </div>
         ))}

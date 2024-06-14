@@ -15,3 +15,12 @@ body {
   background-size: 165px 162px;
   background-position: 0px -40px;
 }
+
+
+.product-table-header {
+  @apply border-b border-[#F6F8FA] cursor-pointer font-normal;
+}
+
+.product-table-row {
+  @apply py-6 border-b border-[#F6F8FA];
+}
