@@ -1,7 +1,10 @@
 # Stackline
 
-Live Deployment 🌐
+## Live Deployment 🌐
+
 👉 [https://stackline-eight.vercel.app](https://stackline-eight.vercel.app)
+
+## Project Overview
 
 This project takes the image spec and turns it into a fully functional website using [Vite](https://vitejs.dev/) and [React](https://reactjs.org/). I utilized [Redux](https://redux.js.org/) to load data from the provided JSON file, and pass into the components. I used [tailwind](https://tailwindcss.com/) for the CSS styling, and [Vercel](https://vercel.com/) for the hosting.
 
